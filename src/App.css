@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.DraftEditor-root {
+  width: 50%;
+  height: 50vh !important;
+  background: white;
+  color: black;
+  padding: 10px;
+}
