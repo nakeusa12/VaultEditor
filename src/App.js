@@ -3,6 +3,7 @@ import './App.css';
 import { EditorState } from 'draft-js';
 import 'draft-js/dist/Draft.css';
 import Editor from '@draft-js-plugins/editor';
+import CommentBox from './Components/Comment/CommentBox';
 
 function App() {
   const [editorState, setEditorState] = React.useState(
@@ -13,7 +14,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Editor editorState={editorState} onChange={setEditorState} />
+        <CommentBox />
+        {/* <Editor editorState={editorState} onChange={setEditorState} /> */}
       </header>
     </div>
   );
